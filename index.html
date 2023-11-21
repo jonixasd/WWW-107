@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>健身工廠</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="robot.css" />
+    <link rel="stylesheet" href="animate.css-main/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css" />
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="nav-bg">
+      <a class="navbar-brand font-weight-bold title" href="#"
+        ><img
+          src="./images-active-2/Logo.png"
+          class="mr-2"
+          width="50px"
+          height="50px"
+          alt=""
+        />健身工廠</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto nav-links">
+          <li class="nav-item mr-2">
+            <a class="nav-link" href="#"
+              ><i class="fas fa-home mr-1"></i>首 頁</a
+            >
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link" href="#"
+              ><i class="fas fa-scroll mr-1"></i>場館介紹</a
+            >
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link" href="#"
+              ><i class="fas fa-clock mr-1"></i>課程時表</a
+            >
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link" href="#"
+              ><i class="fas fa-bookmark mr-1"></i>課程報名</a
+            >
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link" href="#"
+              ><i class="fas fa-info-circle mr-1"></i>聯絡我們</a
+            >
+          </li>
+        </ul>
+        <button
+          class="btn btn-outline-success my-2 my-sm-0"
+          id="login-btn"
+          type="button"
+          data-toggle="modal"
+          data-target="#loginModal"
+        >
+          登入
+        </button>
+      </div>
+    </nav>
+    <div class="modal fade" tabindex="-1" id="loginModal">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" id="login-modal-content">
+          <div class="modal-body">
+            <div
+              class="form-title text-center mt-4 mb-4"
+              id="login-modal-title"
+            >
+              <h4>會員登入</h4>
+            </div>
+            <form>
+              <div class="form-group">
+                <input type="email" placeholder="帳號" class="form-control" />
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  placeholder="密碼"
+                  class="form-control"
+                />
+              </div>
+              <button
+                class="btn btn-success btn-block text-center"
+                id="login-modal-btn"
+                data-dismiss="modal"
+                onclick="loginModal()"
+                type="button"
+              >
+                登入
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="carouselExample"
+      class="carousel slide"
+      data-ride="carousel"
+      style="background-color: grey"
+    >
+      <ol class="carousel-lists">
+        <li class="active" data-target="#carouselExample" data-slide-to="0">
+          <img src="./image-active/list-1.jpg" alt="" />
+        </li>
+        <li data-target="#carouselExample" data-slide-to="1">
+          <img src="./image-active/list-2.jpg" alt="" />
+        </li>
+        <li data-target="#carouselExample" data-slide-to="2">
+          <img src="./image-active/list-3.jpg" alt="" />
+        </li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active slide-1">
+          <div class="item-text">
+            <div class="item-text-content">
+              <div class="heading">
+                <p><span></span></p>
+              </div>
+              <div class="caption">
+                <p></p>
+              </div>
+              <div class="item-btn">
+                <a href="" class="hero-btn"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item slide-2">
+          <div class="item-text">
+            <div class="item-text-content">
+              <div class="heading">
+                <p><span></span></p>
+              </div>
+              <div class="caption">
+                <p></p>
+              </div>
+              <div class="item-btn">
+                <a href="" class="hero-btn"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item slide-3">
+          <div class="item-text">
+            <div class="item-text-content">
+              <div class="heading">
+                <p><span></span></p>
+              </div>
+              <div class="caption">
+                <p></p>
+              </div>
+              <div class="item-btn">
+                <a href="" class="hero-btn"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-section">
+      <div class="about-section-wrapper">
+        <div class="about-image">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="./image-active/owl-1.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="./image-active/owl-1.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="./image-active/owl-1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="about-text">
+            <div class="about-text-wrapper">
+              <h6>Fitness健身工廠</h6>
+              <h1>工廠介紹</h1>
+              <p>
+                <span>Fitness</span
+                >有最頂級齊全的設備，高達50坪的活動範圍，從基本的各式的跑步機、橢圓機、划船機，
+                到訓練力量的槓鈴、啞鈴、拉力器等，甚至還有專為特殊訓練需求的懸掛訓練系統及均速球，
+                讓不管是想要休閒健身或是保持完美體態的你有個絕佳的訓練場地!
+              </p>
+              <div class="about-buttons">
+                <a href="" class="booking-btn">馬上預約</a>
+                <a href="" class="nextPage-btn"
+                  ><i class="fas fa-arrow-down fa-lg"></i
+                ></a>
+              </div>
+              <div class="remind">
+                <i class="far fa-hand-paper fa-2x"></i>
+                <p>拖曳以觀看更多圖片</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-wrapper">
+          <div class="footer-title">
+            <div class="footer-title-text">
+              <img src="./" alt="" /><span></span>
+            </div>
+            <div class="social-media">
+              <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+              <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+              <a href=""><i class="fab fa-line fa-2x"></i></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h5></h5>
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+          <div class="footer-text">
+            <h5></h5>
+            <ul>
+              <li><i></i><span></span></li>
+              <li><i></i><span></span></li>
+              <li><i></i><span></span></li>
+              <li><i></i><span></span></li>
+              <li><i></i><span></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="program.js"></script>
+  </body>
+</html>
